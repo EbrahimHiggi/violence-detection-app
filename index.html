@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Violence Detection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Multi-Camera Violence Detection</h1>
+
+    <div class="main-camera">
+      <video id="mainVideo" controls autoplay muted></video>
+    </div>
+
+    <div class="camera-grid">
+      <video class="small-cam" id="cam1" src="cam1.mp4" autoplay muted></video>
+      <video class="small-cam" id="cam2" src="cam2.mp4" autoplay muted></video>
+      <video class="small-cam" id="cam3" src="cam3.mp4" autoplay muted></video>
+      <video class="small-cam" id="cam4" src="cam4.mp4" autoplay muted></video>
+    </div>
+
+    <div class="controls">
+      <button id="refresh">refresh</button>
+      <button id="fullscreen">fullscreen</button>
+    </div>
+
+    <div id="alertBox" class="hidden">🔔Violence detected on camera</div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

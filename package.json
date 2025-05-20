@@ -1,0 +1,14 @@
+{
+  "name": "violence-detection-app",
+  "version": "1.0.0",
+  "description": "A desktop app for violence detection using Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Ebrahim Mohamed",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^35.1.5"
+  }
+}

@@ -1,0 +1,79 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  background-color: #1f1f1f;
+  padding: 20px;
+  margin: 0;
+  font-size: 24px;
+  border-bottom: 1px solid #333;
+}
+
+.main-camera video {
+  width: 80%;
+  max-height: 400px;
+  margin-top: 20px;
+  border: 3px solid #444;
+}
+
+.camera-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 30px;
+}
+
+.small-cam {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.small-cam:hover {
+  border-color: #09f;
+}
+
+.controls {
+  margin: 20px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #333;
+}
+
+#alertBox {
+  background-color: #e74c3c;
+  color: white;
+  padding: 20px 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  z-index: 9999;
+}
+
+.hidden {
+  display: none;
+}
